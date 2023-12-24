@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: white;
+  }
+  
+  .ana-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-sol,
+  .navbar-orta,
+  .navbar-sag {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-sol a,
+  .navbar-orta a,
+  .navbar-sag a {
+    color: #333; /* Adjust the color to your preference */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block; /* Added */
+  }
+  
+  .navbar-sol a:hover,
+  .navbar-orta a:hover,
+  .navbar-sag a:hover {
+    background-color: #ddd; /* Adjust the background color on hover */
+  }
+  
+  .nav-logo {
+    width: 150px; /* Adjust the logo size as needed */
+  }
+  
+  .fa-regular,
+  .fa-solid {
+    margin-right: 5px;
+    font-size: 1.5rem;
+  }
+  
+  /* Slide Yapısı */
+
+  .slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  /*!İkinici slide yapısı  */
+
+  /* ... Diğer stiller ... */
+
+  .slideshow-container-1 {
+    position: relative;
+    max-width: 1890px;
+    margin: auto;
+}
+
+.slider-container-2 {
+  position: relative;
+  max-width: 2150px;
+  margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ... Diğer stiller ... */
+
+
+  /* !DAHA FAZLA BİLGİ ALIN BUTONU */
+  h1, p, .custom-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+p {
+    margin: 0 10px;
+    color: #000000; /* Dik çizgi rengi */
+    font-size: 20px; /* Dik çizgi ve yazı boyutu */
+}
+
+.custom-button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.custom-button:hover {
+    background-color: #876E5D;
+    color: white;
+}
+
+/* !Destek Kısmı */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #795841;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.section-container {
+  margin: 2rem 0;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+
+.section {
+  padding: 20px;
+  border-bottom: 4px solid #ccc;
+}
+
+.section:last-child {
+  border-right: none;
+}
+
+/* Yeni Butonlar */
+
+section {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+section button {
+  background-color: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+section button:hover {
+  background-color: #ddd;
+}
+
+#tasarim-icerik, #arac-tasarim-icerik {
+  display: none;
+}
+  /* ARABA KISMI */
+
+  

@@ -1,3 +1,8 @@
-document.querySelector('.toggle-button').addEventListener('click', () => {
-    document.querySelector('.navbar').classList.toggle('active');
-});
+function toggleContent(id) {
+  var element = document.getElementById(id);
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
