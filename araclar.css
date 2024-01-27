@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: white;
+}
+
+.ana-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-sol,
+.navbar-orta,
+.navbar-sag {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-sol a,
+.navbar-orta a,
+.navbar-sag a {
+    color: #333;
+    /* Adjust the color to your preference */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    /* Added */
+}
+
+.navbar-sol a:hover,
+.navbar-orta a:hover,
+.navbar-sag a:hover {
+    background-color: #ddd;
+    /* Adjust the background color on hover */
+}
+
+.nav-logo {
+    width: 150px;
+    /* Adjust the logo size as needed */
+}
+
+.fa-regular,
+.fa-solid {
+    margin-right: 5px;
+    font-size: 1.5rem;
+}

@@ -26,20 +26,24 @@ nav {
 .navbar-sol a,
 .navbar-orta a,
 .navbar-sag a {
-  color: #333; /* Adjust the color to your preference */
+  color: #333;
+  /* Adjust the color to your preference */
   text-decoration: none;
   padding: 10px;
-  display: inline-block; /* Added */
+  display: inline-block;
+  /* Added */
 }
 
 .navbar-sol a:hover,
 .navbar-orta a:hover,
 .navbar-sag a:hover {
-  background-color: #ddd; /* Adjust the background color on hover */
+  background-color: #ddd;
+  /* Adjust the background color on hover */
 }
 
 .nav-logo {
-  width: 150px; /* Adjust the logo size as needed */
+  width: 150px;
+  /* Adjust the logo size as needed */
 }
 
 .fa-regular,
@@ -48,50 +52,6 @@ nav {
   font-size: 1.5rem;
 }
 
-/* Your existing styles */
-
-/* ... (Diğer stiller) ... */
-
-.subnav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
-.subnav-section {
-  flex: 1;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-
-.subnav-section hr {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.subnav-section:hover {
-  background-color: #555;
-}
-
-.subnav-section h2 {
-  margin-bottom: 10px;
-}
-
-.subnav-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ... (Diğer stiller) ... */
-
-/* Your existing styles */
-
 #kısım-bir {
   position: relative;
   width: 100%;
@@ -119,119 +79,6 @@ nav {
   text-align: center;
 }
 
-.Subnavbar-arac-resim-bir {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-  color: white;
-  margin: 0 auto; /* Centered */
-}
-
-.Subnavbar-arac-resim-bir a {
-  color: white;
-  display: block; /* Added */
-  text-align: center; /* Added */
-  padding: 10px; /* Added */
-}
-
-.model-iki-foto {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-}
-
-.model-uc-foto {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-}
-
-.model-dort-foto {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-}
-
-/*! Modellerde bulunacak Create butonu css */
-
-.Btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: black;
-}
-
-/* plus sign */
-.sign {
-  width: 100%;
-  font-size: 2em;
-  color: white;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* text */
-.text {
-  position: absolute;
-  right: 0%;
-  width: 0%;
-  opacity: 0;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 500;
-  transition-duration: 0.3s;
-}
-/* hover effect on button width */
-.Btn:hover {
-  width: 125px;
-  border-radius: 0px;
-  transition-duration: 0.3s;
-}
-
-/* artı işareti */
-.sign {
-  width: 30%;
-  font-size: 2em;
-  color: white;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* metin */
-.text {
-  position: absolute;
-  right: 0%;
-  width: 70%;
-  opacity: 0;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 500;
-  transition-duration: 0.3s;
-  padding-right: 20px; /* İhtiyaca göre padding ayarlayın */
-}
-
-.Btn:hover .sign {
-  width: 20%; /* İhtiyaca göre genişliği ayarlayın */
-  transition-duration: 0.3s;
-  padding-left: 10px; /* İhtiyaca göre padding ayarlayın */
-}
-
 #kısım-bir {
   position: relative;
   width: 100%;
@@ -256,38 +103,5 @@ nav {
 }
 
 .overlay h1 {
-  text-align: center;
-}
-
-.Subnavbar-arac-resim-bir {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-  color: white;
-}
-
-.Subnavbar-arac-resim-bir a {
-  color: white;
-}
-
-.model-iki-foto {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-}
-
-.model-uc-foto {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
-  text-align: center;
-}
-
-.model-dort-foto {
-  border: 3px solid gray;
-  width: 150px;
-  height: 100px;
   text-align: center;
 }
