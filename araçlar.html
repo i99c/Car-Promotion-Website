@@ -5,27 +5,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Araçlar</title>
         <link rel="stylesheet" href="araclar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+            rel="stylesheet">
     </head>
     <body>
-        <div class="ana-nav">
-            <div class="navbar-sol">
-                <a href="araçlar.html">Araçlar</a>
-                <a href="fiyat-listesi.html">Fiyat Listesi</a>
-            </div>
-            <div class="navbar-orta">
-                <a href="index.html"><img class="nav-logo"
-                        src="https://www.landrover.com.tr/_nuxt/img/RR_Slate_Blue.2cf52f0.svg"
-                        alt></a>
-            </div>
-            <div class="navbar-sag">
-                <a href="log-in.html"><i class="fa-regular fa-user"></i></a>
-                <a href="subeler.html"><i
-                        class="fa-solid fa-location-dot"></i>Şubelerimiz</a>
-                <a href="model-arama"><i
-                        class="fa-solid fa-magnifying-glass"></i></a>
-            </div>
 
+        <div class="header" id="header">
+            <nav>
+                <a href="index.html"><img src="resimler/logo.svg"
+                        class="logo"></a>
+                <ul>
+                    <li><a href="#" id="rangerover">Range Rover</a></li>
+                    <li><a href="#" id="rangeroversport">Range Rover
+                            Sport</a></li>
+                    <li><a href="#" id="rangerovervelar">Range Rover
+                            Velar</a></li>
+                    <li><a href="#" id="yenirangeroverevoque">Yeni Range Rover
+                            Evoque</a></li>
+                    <li><a href="#" id="defender130">Defender 130</a></li>
+                    <li><a href="#" id="defender110">Defender 110</a></li>
+                    <li><a href="#" id="defender90">Defender 90</a></li>
+                    <li><a href="#" id="discovery">Discovery</a></li>
+                    <li><a href="#" id="discoverysport">Discovery Sport</a></li>
+                </ul>
+            </nav>
+            <div class="info">
+                <div>
+                    <h2>234 km/sa</h2>
+                    <p>Max Speed</p>
+                </div>
+                <div>
+                    <h2>6.4 ‡</h2>
+                    <p>Speed 0-100 km/sa</p>
+                </div>
+                <div>
+                    <h2>80 L</h2>
+                    <p>Full Fuel</p>
+                </div>
+                <div class="line">
+                </div>
+                <div>
+                    <h2>Range Rover</h2>
+                </div>
+            </div>
         </div>
+
+        <script>
+            let header = document.getElementById("header")
+            let rr = document.getElementById("rangerover")
+            let rrs = document.getElementById("rangeroversport")
+            let rrv = document.getElementById("rangerovervelar")
+            let yrre = document.getElementById("yenirangeroverevoque")
+            let d130 = document.getElementById("defender130")
+            let d110 = document.getElementById("defender110")
+            let d90 = document.getElementById("defender90")
+            let dis = document.getElementById("discovery")
+            let diss = document.getElementById("discoverysport")
+
+
+            rr.onclick= function(){
+                header.style.backgroundImage = "url(resimler/range-rover-image.jpg)";
+            }
+            rrs.onclick= function(){
+                header.style.backgroundImage = "url(resimler/range-rover-sport.webp)";
+            }
+            rrv.onclick= function(){
+                header.style.backgroundImage = "url(resimler/range-rover-velar.jpg)";
+            }
+            yrre.onclick= function(){
+                header.style.backgroundImage = "url(resimler/range-rover-evoque.webp)";
+            }
+            d130.onclick= function(){
+                header.style.backgroundImage = "url(https://media.cdn-jaguarlandrover.com/api/v2/images/98606/w/1180)";
+            }
+            d110.onclick= function(){
+                header.style.backgroundImage = "url(resimler/defender-110.avif)";
+            }
+            d90.onclick= function(){
+                header.style.backgroundImage = "url(resimler/defender-90.avif)";
+            }
+            dis.onclick= function(){
+                header.style.backgroundImage = "url(resimler/discovery.webp)";
+            }
+            diss.onclick= function(){
+                header.style.backgroundImage = "url(resimler/discovery-sport.webp)";
+            }
+            
+
+        </script>
 
         <script src="script.js"></script>
         <script
