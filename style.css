@@ -105,3 +105,127 @@ nav {
 .overlay h1 {
   text-align: center;
 }
+
+.subnav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  /* Örnek bir yükseklik değeri */
+  background-color: #f2f2f2;
+  /* Arka plan rengi */
+}
+
+.dropdown-menubir,
+.dropdown-menuiki,
+.dropdown-menuuc {
+  flex: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  /* Dropdown arka plan rengi */
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  /* Gölgelendirme */
+  z-index: 1;
+}
+
+.dropdown-menubir:hover .dropdown-content,
+.dropdown-menuiki:hover .dropdown-content,
+.dropdown-menuuc:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  /* Link rengi */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  /* Linkin üzerine gelinceki arka plan rengi */
+}
+
+h2 {
+  margin: 0;
+}
+
+.dropdown-menubir .dropdown-content,
+.dropdown-menuiki .dropdown-content,
+.dropdown-menuuc .dropdown-content {
+  display: none;
+  /* İlk başta dropdown menüleri gizle */
+}
+
+.subnav .dropdown-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.subnav .dropdown-content a {
+  text-align: center;
+  margin-bottom: 10px;
+  /* Yazılar arasına boşluk ekler */
+}
+
+.subnav .dropdown-content img {
+  margin-bottom: 10px;
+  /* Resimlerin altına boşluk ekler */
+}
+
+.rr-imgbir {
+  width: 320px;
+  height: 210px;
+}
+
+.rr-imgiki {
+  width: 320px;
+  height: 210px;
+}
+
+.rr-imguc {
+  width: 320px;
+  height: 210px;
+}
+
+.rr-imgdort {
+  width: 320px;
+  height: 210px;
+}
+
+.subnav .dropdown-menubir a {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+
+.d-imgbir {
+  width: 320px;
+  height: 210px;
+}
+
+.d-imgiki {
+  width: 320px;
+  height: 210px;
+}
+
+.d-imguc {
+  width: 320px;
+  height: 210px;
+}
+
+.dis-imgbir {
+  width: 320px;
+  height: 210px;
+}
+
+.dis-imgiki {
+  width: 320px;
+  height: 210px;
+}

@@ -1,29 +1,26 @@
-let slideIndex3 = 1;
-showSlides3(slideIndex3);
+document.addEventListener("DOMContentLoaded", function () {
+    let dropdowns = document.querySelectorAll('.dropdown-menubir, .dropdown-menuiki, .dropdown-menuuc');
 
-function plusSlides3(n) {
-    showSlides3(slideIndex3 += n);
-}
+    dropdowns.forEach(function (dropdown) {
+        let title = dropdown.querySelector('h2');
+        let content = dropdown.querySelector('.dropdown-content');
 
-function currentSlide3(n) {
-    showSlides3(slideIndex3 = n);
-}
+        title.addEventListener('click', function () {
+            // Tüm dropdown menülerini gizle
+            dropdowns.forEach(function (dropdown) {
+                dropdown.querySelector('.dropdown-content').style.display = 'none';
+            });
+            // Bu dropdown menüsünü göster veya gizle
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
 
-function showSlides3(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides2");
-
-    if (n > slides.length) {
-        slideIndex3 = 1;
-    }
-
-    if (n < 1) {
-        slideIndex3 = slides.length;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slides[slideIndex3 - 1].style.display = "block";
-}
+    // Sayfa herhangi bir yere tıklandığında dropdown menülerini gizle
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.subnav')) {
+            dropdowns.forEach(function (dropdown) {
+                dropdown.querySelector('.dropdown-content').style.display = 'none';
+            });
+        }
+    });
+});
